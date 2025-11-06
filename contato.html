@@ -5,89 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <title>Contato</title>
+    <title>Home</title>
 </head>
 <body>
     <header>
-      <nav id="navbar">
-        <div class="logo"><i class="fa-solid fa-tooth"></i>Conexão do Bem</div>
-        <p>Transformando vidas através da tecnologia e cuidado odontológico</p>
-        <ul class="menu">
-            <li><a href="index.html" class="menu-item1">Home</a></li>
-            <li><a href="sobre.html" class="menu-item2">Sobre</a></li>
-            <li><a href="quemsomos.html" class="menu-item3">Quem somos</a></li>
-            <li><a href="faq.html" class="menu-item4">FAQ</a></li>
-            <li><a href="contato.html" class="menu-item4">Contato</a></li>
-        </ul>
-    </nav>
-  </header>
-  <section class="page-title">
-    <h1>
-      Entre em contato
-    </h1>
-    <p>
-      Entre em contato com a equipe da Conexão do Bem. Preencha o formulário abaixo e retornaremos o mais breve possível.
-    </p>
-  </section>
-  <main id="main-container">
-    <section id="contacts-container">
-      <div id="cards-container">
-        <a href="tel:+5511000000" class="contact-card phone">
-          <div class="card-icon">
-            <i class="fa-solid fa-phone"></i>
-          </div>
-          <div class="card-infos">
-            <p>Telefone</p>
-            <span>(11) 00000-0000</span>
-          </div>
-        </a>
+        <nav class="navbar section-content">
+            <a href="index.html" class="nav-logo">
+                <h2 class="logo-text">
+                    <i class="fa-solid fa-tooth"></i>
+                    Conexão do Bem</h2>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="sobre.html" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contato.html" class="nav-link">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a href="quemsomos.html" class="nav-link">Quem somos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-        <a href="#" class="contact-card location">
-          <div class="card-icon">
-            <i class="fa-solid fa-location-dot"></i>
-          </div>
-          <div class="card-infos">
-            <p>Localização</p>
-            <span>Rua exemplo, 123 - bairro exemplo, cidade - SP</span>
-          </div>
-        </a>
+    <main>
+        <section class="contact-section">
+          <h2 class="section-title">Entre em Contato</h2>
 
-        <a href="mailto:contato@conexaodobem.com" class="contact-card email">
-          <div class="card-icon">
-            <i class="fa-solid fa-envelope"></i>
-          </div>
-          <div class="card-infos">
-            <p>E-mail</p>
-            <span>contato@conexaodobem.com</span>
-          </div>
-        </a>
-      </div>
-    </section>
+          <ul class="contact-info-list">
+            <li><i class="fa-solid fa-location-dot"></i> Avenida Nova Paulista, 450</li>
+            <li><i class="fa-solid fa-envelope"></i> info@conexaodobem.com</li>
+            <li><i class="fa-solid fa-phone"></i> (11) 0000-0000</li>
+          </ul>
 
-    <section id="contact-form-container">
-      <form id="contact-form">
-        <div class="input-group">
-          <label for="nome">Nome</label>
-          <input type="text" id="nome" name="nome" required>
-        </div>
+          <form class="contact-form">
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu e-mail" required>
+            <textarea rows="4" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+    </main>
+    <footer class="site-footer">
+    <div class="footer-content">
+        <h3>Conexão do Bem</h3>
+        <p>Nosso time está sempre aprendendo e buscando contribuir para um mundo melhor.</p>
+        <p class="footer-copy">&copy; 2025 Conexão do Bem. Todos os direitos reservados.</p>
+    </div>
+</footer>
 
-        <div class="input-group">
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-
-        <div class="input-group">
-          <label for="message">Assunto</label>
-          <textarea name="message" id="message" required rows="5"></textarea>
-        </div>
-
-        <button type="submit">Enviar mensagem</button>
-      </form>
-    </section>
-  </main>
-    <footer class="footer-container">
-        <p&copy:>2025 ByteHope – Todos os direitos reservados.
-        Desenvolvido por alunos do projeto.</p>
-    </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
